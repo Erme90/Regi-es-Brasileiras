@@ -11,15 +11,15 @@
     <div>
         <?php
             $estado = isset($_GET["estado"])?$_GET["estado"]:"Nenhum estado selecionado";
-            echo "O estado selecionado foi $estado.<br>"; 
+            echo "O estado selecionado: $estado.<br>"; 
             
             switch($estado){
                 
                 case "Goiás":
-                case "Mato-Grosso":
-                case "Matro-Grosso do Sul":
+                case "Mato Grosso":
+                case "Mato Grosso do Sul":
                 case "Distrito Federal":
-                    echo "Região Centro-Oeste";
+                    echo "<span style='color:#550c99;'>Região Centro-Oeste</span>";
                     break;
                 case "Acre":
                 case "Amazonas":
@@ -28,7 +28,7 @@
                 case "Rondônia":
                 case "Roraima":
                 case "Tocantins":
-                    echo "Região Norte";
+                    echo "<span style='color:#0b7327'>Região Norte</span>";
                     break;
                 case "Alagoas":
                 case "Bahia":
@@ -39,22 +39,24 @@
                 case "Paraíba":
                 case "Rio Grande do Norte":
                 case "Sergipe":
-                    echo "Região Nordeste";
+                    echo "<span style='color:#cc1225;'>Região Nordeste</span>";
                     break;
                 case "Paraná":
                 case "Rio Grande do Sul":
                 case "Santa Catarina":
+                    echo "<span style='color:#354ef2';>Região Sul</span>";
                     break;
                 case "São Paulo":
                 case "Rio de Janeiro":
                 case "Minas Gerais":
                 case "Espírito Santo":
-                    echo"Região Sudeste";
+                    echo"<span style='color:#f26535';>Região Sudeste</span>";
                     break;
                 default:
                     echo "Nenhuma região selecionada!";
             }
         ?>
+        <br>
         <br>
         <a href="javascript:history.go(-1)" class="botão">Voltar</a>
     </div>
