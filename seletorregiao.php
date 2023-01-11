@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="estilo.css">
     </head>
 <body>
-    <div>
+    <div class="respostaform">
         <?php
             $estado = isset($_GET["estado"])?$_GET["estado"]:"Nenhum estado selecionado";
-            echo "O estado selecionado: $estado.<br>"; 
+            echo "Estado selecionado: $estado.<br><br>"; 
             
             switch($estado){
                 

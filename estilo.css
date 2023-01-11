@@ -1,14 +1,27 @@
 body{
-    background-color: #9daabf ;
+    background-color: #c3cbd8 ;
 }
 
-div{
+.formulario, .respostaform{
     border: solid 4px black;
     border-radius: 25px;   
     width: 600px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
+    margin-top: 95px;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+.apresentacao{
+    border: solid 4px black;
+    border-radius: 25px;   
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 100px;
     padding: 20px;
     background-color: antiquewhite;
 }
@@ -16,13 +29,7 @@ div{
 .botão{
     border-radius: 90px;
     background-color: #479aed;
+    text-decoration: none;
 }
 
-h2{
-    color:#0e3159;
-    font-size: 16px;
-}
-.regiao{
-    background-color: red;
-    color: red;
-}
+
